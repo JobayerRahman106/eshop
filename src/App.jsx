@@ -5,14 +5,14 @@ import ProductDetailsPage from "./assets/pages/ProductDetailsPage"
 import BlogPage from "./assets/pages/BlogPage"
 import CheckoutPage from "./assets/pages/CheckoutPage"
 import ContactPage from "./assets/pages/ContactPage"
-import CommonLayout from "./components/CommonLayout";
+import CommonLayout from "./components/commonLayouts/CommonLayout";
 
 function App() {
   
   return (
     <>
       <Routes>
-        <Route path="/" element={<CommonLayout />} >
+        <Route path="/" element={<CommonLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/product-list" element={<ProductListPage/>} />
           <Route path="/product-details" element={<ProductDetailsPage />} />

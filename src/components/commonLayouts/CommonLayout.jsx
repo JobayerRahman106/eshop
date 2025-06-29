@@ -1,15 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Container from './Container'
+import Header from '../header/Header'
 
 const CommonLayout = () => {
   return (
     <>
-       <Container>
-         <div> Navbar </div>
-          <Outlet/>
-         <div> Footer </div>
-       </Container>
+        <Header/>
+        <Outlet/>
+        <div> Footer </div>
     </>
   )
 }
