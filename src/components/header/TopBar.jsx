@@ -3,14 +3,17 @@ import Container from '../commonLayouts/Container'
 import { Link } from 'react-router-dom'
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineLocalPhone } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 
 const TopBar = () => {
   return (
     <div className='border-b border-[#303030] border-solid py-[22px]'>
       <Container>
-        <div className='flex justify-between items-center'>
-          <div className='flex items-center gap-[50px] font-[Montserrat] font-normal text-sm relative after:content-[""] after:absolute after:w-[1px] after:h-[32px] after:bg-[#BFBFBF] after:left-[55%] after:top-[50%] after:-translate-y-1/2'>
+        <div className='flex justify-between items-center font-[Montserrat] font-normal text-sm'>
+          <div className='flex items-center gap-[50px]  relative after:content-[""] after:absolute after:w-[1px] after:h-[32px] after:bg-[#BFBFBF] after:left-[55%] after:top-[50%] after:-translate-y-1/2'>
               <Link to="#" target='-blank' className='flex items-center gap-2'>
                 <CiLocationOn />
                 Laxmipur,Gaibandha 
@@ -20,7 +23,11 @@ const TopBar = () => {
                 +8801707-607518 
               </Link>
           </div>
-          <div>right</div>
+          <div className='flex items-center gap-4'>
+            <Link to="#"> <FaFacebookF /> </Link>
+            <Link to="#"> <FaTwitter /> </Link>
+            <Link to="#"> <FaInstagram /> </Link>
+          </div>
         </div>
       </Container>
     </div> 
